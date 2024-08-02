@@ -364,13 +364,63 @@ font-size: 1.25rem;
 font-weight: 900;
 line-height: 120%;
 }
-.image-description p{
+.image-description p, .fitness p{
 color: rgba(255, 255, 255, 0.50);
 font-size: 1.25rem
 font-weight: 400;
 line-height: 120%;
 margin-top: 0.25rem;
 }
+
+/* footer styling here */
+footer{
+    background: rgba(255, 255, 255, 0.10);
+}
+.fitness{
+    margin-left: 2rem;
+}
+.fitness h1{
+    font-size: 4.375rem;
+    margin-left: 1.25rem;
+}
+.get-container{
+    display: flex;
+    gap: 9.5rem;
+    margin-top: 6.4rem;
+    margin-bottom: 4.5rem;
+    margin-left: 2rem;
+}
+.get h1{
+color: #FFF;
+font-size: 2rem;
+font-weight: 700;
+line-height: 120%;
+margin-bottom: 2rem;
+}
+.get p{
+color: rgba(255, 255, 255, 0.50);
+font-size: 1.5rem;
+line-height: 120%;
+margin-bottom: 1.25rem;
+}
+hr{
+    width: 80%;
+    color: rgba(255, 255, 255, 0.10);
+    margin: 0 auto 2.5rem auto;
+}
+.copy-right{
+color: rgba(255, 255, 255, 0.50);
+font-size: 1.25rem;
+line-height: 24px;
+letter-spacing: 0.3px;
+padding-bottom: 2.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
 
 
 
@@ -384,7 +434,7 @@ margin-top: 0.25rem;
     .BMI-heading{
         width: 80%;
     }
-    .card-container, .hero, .run-container, .BMI-calculator{
+    .card-container, .hero, .run-container, .BMI-calculator, .get-container{
       flex-direction: column;
     }
     .hero{
