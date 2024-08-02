@@ -239,6 +239,7 @@ body{
     font-weight: 600;
     color: #fff;
     margin-top: 34px;
+    width: 224px;
 }
 /* BMI calculator heading section */
 .BMI-heading{
@@ -248,15 +249,23 @@ body{
 /* BMI Calculator Main Section */
 .BMI-calculator{
     display: flex;
-    justify-content: space-around;
     background: #222;
 }
-
+.BMI-chart{
+    margin-left: 187px;
+}
 .BMI-chart h1, .BMI-calculation h1{
     color: #fff;
     font-weight: 900;
     font-size: 1.75rem;
     line-height: 33.6px;
+    margin: 52px 0;
+}
+.BMI-calculation{
+    margin-left: 674px;
+}
+.BMI-calculation h1{
+    margin-bottom: 14px;
 }
 .BMI-table th, .BMI-table td{
     color: rgba(255, 255, 255, 0.50);
@@ -274,13 +283,58 @@ table{
     border-collapse: collapse;
     width: 300px;
 }
+.BMI-calculation p{
+    margin-bottom: 34px;
+}
+
+
+.BMI-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    /* width: 320px; */
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.BMI-input input, .BMI-input select {
+    padding: 12px;
+    background-color: #555;
+    border: 1px solid #666;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.BMI-input input:nth-child(1), .BMI-input input:nth-child(2) {
+    grid-column: span 1;
+}
+
+.BMI-input input:nth-child(3), .BMI-input select:nth-child(4) {
+    grid-column: span 1;
+}
+
+.BMI-input select:nth-child(5) {
+    grid-column: span 2;
+}
+
+.BMI-input label {
+    grid-column: span 2;
+    margin-bottom: -8px; /* Adjusts the gap between label and select */
+    color: #bbb;
+}
+
+
 
 
 @media screen and (max-width: 572px) {
     .BMI-heading, .run-section{
         width: 100%
     }
-    .card-container, .hero, .run-container{
+    .BMI-heading{
+        width: 80%;
+    }
+    .card-container, .hero, .run-container, .BMI-calculator{
       flex-direction: column;
     }
     .hero{
@@ -333,4 +387,17 @@ table{
         width: 100%;
         margin-top: 31px;
     }
+    .BMI-chart{
+        margin-left: 0;
+    }
+    .BMI-calculation{
+        margin-left: 0;
+    }
+
+    /* responsive for BMI input field start */
+    .BMI-input {
+        display: flex;
+        flex-direction: column;
+    }
+    /* responsive for BMI input field end */
 }
