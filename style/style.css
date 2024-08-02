@@ -81,7 +81,6 @@ body{
 
 .hero-description{
     display: flex;
-    gap: 20px;
     flex-direction: column;
 }
 .hero-description h1{
@@ -89,12 +88,14 @@ body{
     color: #fff;
     font-weight: 800;
     line-height: 120%;
+    margin-bottom: 20px;
 }
 
 .hero-description p{
     color: rgba(255, 255, 255, 0.50);
     letter-spacing: 0.5px;
     line-height: 24px;
+    margin-bottom: 20px;
 }
 .hero-image-container{
     position: relative;
@@ -331,6 +332,9 @@ table{
     .BMI-heading, .run-section{
         width: 100%
     }
+    .run-section{
+     padding: 0;
+    }
     .BMI-heading{
         width: 80%;
     }
@@ -338,8 +342,9 @@ table{
       flex-direction: column;
     }
     .hero{
-       justify-content: space-around;
-       width: 100%;
+       justify-content: baseline;
+       max-width: 90%;
+       
     }
     .hero-btn{
         display: flex;
