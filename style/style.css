@@ -219,13 +219,13 @@ body{
     border-radius: 18px;
     object-fit: cover;
 }
-.run-description h1, .BMI-heading h1{
+.run-description h1, .BMI-heading h1, .team-heading h1{
     font-size: 3rem;
     font-weight: 900;
     color: #fff;
     line-height: 57.6px;
 }
-.run-description p, .BMI-heading p, .BMI-calculation p{
+.run-description p, .BMI-heading p, .BMI-calculation p, .team-heading p{
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.125rem;
     letter-spacing: 0.3px;
@@ -325,6 +325,52 @@ table{
     color: #bbb;
 }
 
+/* meet our team section start */
+.meet-team{
+    width: 73.6%;
+    margin: 0 auto;
+}
+.team-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 88px 0 58px 0;
+    gap: 14px;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.25rem;
+}
+.team-image{
+    height: 100%;
+    position: relative;
+}
+.team-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+.image-description{
+    position: absolute;
+    bottom: 1rem;
+    left: 1.25rem;
+}
+.image-description h3{
+color: #FFF;
+font-size: 1.25rem;
+font-weight: 900;
+line-height: 120%;
+}
+.image-description p{
+color: rgba(255, 255, 255, 0.50);
+font-size: 1.25rem
+font-weight: 400;
+line-height: 120%;
+margin-top: 0.25rem;
+}
 
 
 
@@ -405,4 +451,10 @@ table{
         flex-direction: column;
     }
     /* responsive for BMI input field end */
+    .meet-team{
+        width: 95%;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
