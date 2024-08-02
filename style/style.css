@@ -7,6 +7,9 @@
     text-decoration: none;
     font-family: "Inter", sans-serif;
 }
+body{
+    background-color: black;
+}
 
 /* shared styles */
 .btn-primary{
@@ -20,13 +23,7 @@
      margin-left: 14px;
 }
 
-
 /* style heading */
-header{
-    background-color: rgba(17, 17, 17, 0.993);
-}
-
-
 .nav-container{
     width: 74%;
     margin: 0 auto;
@@ -40,6 +37,10 @@ header{
     color: rgba(230, 83, 60, 1);
     font-size: 2.25rem;
     font-weight: 900;
+}
+.nav-links{
+    border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .nav-links ul{
@@ -84,7 +85,7 @@ header{
     flex-direction: column;
 }
 .hero-description h1{
-    font-size: 78px;
+    font-size: 4.88rem;
     color: #fff;
     font-weight: 800;
     line-height: 120%;
@@ -95,7 +96,9 @@ header{
     letter-spacing: 0.5px;
     line-height: 24px;
 }
-
+.hero-image-container{
+    position: relative;
+}
 .first{
     background: #E6533C;
 }
@@ -103,11 +106,195 @@ header{
     background: transparent;
 }
 
+.card-1{
+    display: flex;
+    width: 206px;
+    height: 96px;
+    /* margin-top: -170px; */
+    /* margin-right: -1000px; */
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.37);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    bottom: 63px;
+    left: -113px;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 96px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.37);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 142px;
+    right: -74px;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: rgba(230, 83, 60, 1);
+}
+.card-1-text h1, .card-2 h1{
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    color: #FAFAF9;
+}
+
+.card-1-text p, .card-2 p{
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+/* change your havit section start */
+.change-havit-section{
+    width: 72.2%;
+    margin: 100px auto;
+}
+.havit-description{
+    text-align: center;
+}
+.havit-description h1{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 900;
+}
+.havit-description p{
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.3px;
+    margin-top: 14px;
+    margin-bottom: 58px;
+}
+.card-container{
+    display: flex;
+    text-align: center;
+}
+.card img{
+    width: 272px;
+    border-radius: 136px;
+    border: 3px solid rgb(48, 47, 47);
+}
+.card h2{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+.card p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.88rem;
+    letter-spacing: 0.3px;
+}
+
+/* Run an Extra Mile Easily section start */
+.run-section{
+    padding: 30px 32px 29px 54px;
+    background: #222222;
+    width: 72.2%;
+    border-radius: 18px;
+    margin: 0 auto;
+}
+.run-container{
+    display: flex;
+    justify-content: space-between;
+}
+.run-image img{
+    height: 312px;
+    width: 366px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.run-description h1, .BMI-heading h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 57.6px;
+}
+.run-description p, .BMI-heading p, .BMI-calculation p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.125rem;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    margin-top: 14px;
+}
+.btn-custom{
+    padding: 16px 40px;
+    border-radius: 42px;
+    background: #E6533C;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 34px;
+}
+/* BMI calculator heading section */
+.BMI-heading{
+    width: 46.6%;
+    margin: 80px auto;
+}
+/* BMI Calculator Main Section */
+.BMI-calculator{
+    display: flex;
+    justify-content: space-around;
+    background: #222;
+}
+
+.BMI-chart h1, .BMI-calculation h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.75rem;
+    line-height: 33.6px;
+}
+.BMI-table th, .BMI-table td{
+    color: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    font-size: 0.88rem;
+    padding: 10px;
+    text-align: center;
+}
+.BMI-table th{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+table{
+    border-collapse: collapse;
+    width: 300px;
+}
+
 
 @media screen and (max-width: 572px) {
-    .hero{
-       flex-direction: column;
+    .BMI-heading, .run-section{
+        width: 100%
     }
+    .card-container, .hero, .run-container{
+      flex-direction: column;
+    }
+    .hero{
+       justify-content: space-around;
+       width: 100%;
+    }
+    .hero-btn{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .btn-primary{
+        padding: 16px 40px;
+        width: fit-content;
+   }
     .nav-container{
         width: calc(100% - 40px);
         padding: 56px 20px;
@@ -118,5 +305,32 @@ header{
     .menu{
         color: white;
         display: block;
+    }
+
+    .card-1{
+        width: 180px;
+        height: 70px;
+        bottom: 250px;
+        left: 0px;
+    }
+
+    .card-2{
+        top: 0px;
+        right: 15px;
+        width: 170px;
+        height: 70px;
+    }
+
+    .hero-image-container{
+        margin-top: 70px;
+    }
+    .card-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .run-image img{
+        height: auto;
+        width: 100%;
+        margin-top: 31px;
     }
 }
