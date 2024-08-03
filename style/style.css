@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: "Inter", sans-serif;
 }
+
 body{
     background-color: black;
 }
@@ -544,5 +545,24 @@ justify-content: center;
     }
     .card-details{
         margin-bottom: 2rem;
+    }
+    .hero-description{
+        max-width: 95%;
+    }
+    .hero-image-container img{
+        max-width: 100%;
+    }
+    .btn-primary{
+        padding: 8px 20px;
+        border: 1px solid white;
+        border-radius: 21px;
+        color: white;
+        font-size: 18PX;
+        line-height: 22px;
+        font-weight: 600;
+        margin-left: 7px;
+   }
+    .hero-description h1{
+        font-size: 3.5rem;
     }
 }
