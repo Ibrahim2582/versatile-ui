@@ -219,13 +219,13 @@ body{
     border-radius: 18px;
     object-fit: cover;
 }
-.run-description h1, .BMI-heading h1, .team-heading h1{
+.run-description h1, .BMI-heading h1, .team-heading h1, .BMR-heading h1{
     font-size: 3rem;
     font-weight: 900;
     color: #fff;
     line-height: 57.6px;
 }
-.run-description p, .BMI-heading p, .BMI-calculation p, .team-heading p{
+.run-description p, .BMI-heading p, .BMI-calculation p, .team-heading p, .BMR-heading p{
     color: rgba(255, 255, 255, 0.50);
     font-size: 1.125rem;
     letter-spacing: 0.3px;
@@ -243,7 +243,7 @@ body{
     width: 224px;
 }
 /* BMI calculator heading section */
-.BMI-heading{
+.BMI-heading, .BMR-heading{
     width: 46.6%;
     margin: 80px auto;
 }
@@ -265,7 +265,7 @@ body{
 .BMI-calculation{
     margin-left: 674px;
 }
-.BMI-calculation h1{
+.BMI-calculation h1, BMR-heading{
     margin-bottom: 14px;
 }
 .BMI-table th, .BMI-table td{
@@ -280,7 +280,7 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
-table{
+.BMI-table{
     border-collapse: collapse;
     width: 300px;
 }
@@ -324,6 +324,32 @@ table{
     margin-bottom: -8px; /* Adjusts the gap between label and select */
     color: #bbb;
 }
+
+/* BMR main section style start */
+.BMR{
+    background: #222;
+}
+.BMR-calculator-container{
+    display: flex;
+    justify-content: space-around;
+}
+.BMR-description h1{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    margin-left: 4rem;
+}
+.BMR-table{
+    width: fit-content;
+}
+.BMR-calculation{
+    margin-left: 0px;
+}
+
+
 
 /* meet our team section start */
 .meet-team{
@@ -425,16 +451,24 @@ justify-content: center;
 
 
 @media screen and (max-width: 572px) {
-    .BMI-heading, .run-section{
-        width: 100%
+    .run-section{
+        width: 95%
+    }
+    .BMI-calculator{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .BMR-calculator-container {
+        width: 95%;
+        margin: 0 auto;
     }
     .run-section{
      padding: 0;
     }
-    .BMI-heading{
+    .BMI-heading, .BMR-heading{
         width: 80%;
     }
-    .card-container, .hero, .run-container, .BMI-calculator, .get-container{
+    .card-container, .hero, .run-container, .BMI-calculator, .get-container, .BMR-calculator-container{
       flex-direction: column;
     }
     .hero{
@@ -478,6 +512,7 @@ justify-content: center;
 
     .hero-image-container{
         margin-top: 70px;
+        max-width: 90%;
     }
     .card-container{
         justify-content: center;

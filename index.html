@@ -83,8 +83,10 @@
                 <div class="card-container">
                     <div class="card">
                         <img src="./images/image 3.png" alt="">
+                        <div class="card-details">
                         <h2>Movement</h2>
                         <p>We believe fitness should be accessible to everyone</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="./images/image 2.png" alt="">
@@ -183,6 +185,85 @@
             </div>
 
           </section>
+          <section class="BMR-heading">
+                <h1>BMR Calultor</h1>
+                <p>A BMR (Basal Metabolic Rate) calculator estimates the number of calories your body needs at rest to maintain vital functions such as breathing, circulation, and cell production.</p>
+            </section>
+            <!-- BMR main section is start -->
+             <section class="BMR">
+                <div class="BMR-calculator-container">
+                    <div class="BMR-description">
+                        <h1>Age Wise BMR Ranges for Adults</h1>
+                        <table class="BMI-table BMR-table">
+                            <thead>
+                                <tr>
+                                    <th>Age-group</th>
+                                    <th>BMR in men (calories burnt per hour)</th>
+                                    <th>
+                                        BMR in Women(calories burnt per hour)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20-29 Years</td>
+                                    <td>39.5</td>
+                                    <td>37.0</td>
+                                </tr>
+                                <tr>
+                                    <td>30-39 Years</td>
+                                    <td>39.5</td>
+                                    <td>36.5</td>
+                                </tr>
+                                <tr>
+                                    <td>40-49 Years</td>
+                                    <td>38.5</td>
+                                    <td>36.5</td>
+                                </tr>
+                                <tr>
+                                    <td>50-59 Years</td>
+                                    <td>37.5</td>
+                                    <td>35.0</td>
+                                </tr>
+                                <tr>
+                                    <td>60-69 Years</td>
+                                    <td>36.5</td>
+                                    <td>34.0</td>
+                                </tr>
+                                <tr>
+                                    <td>70-79 Years</td>
+                                    <td>35.5</td>
+                                    <td>33.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="BMI-calculation BMR-calculation">
+                        <h1>Calculate your BMI</h1>
+                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of<br> income or access to a gym.</p>
+                        <div class="BMI-input">
+                            <input type="number" placeholder="Height/cm">
+                            <input type="number" placeholder="Weight/kg">
+                            <input type="number" placeholder="Age">
+                            <select name="Sex" id="Sex">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <select name="activity" id="activity">
+                                <option value="" disabled selected>Select an activity factor</option>
+                                <option value="sedentary">Sedentary (little or no exercise)</option>
+                                <option value="lightly_active">Lightly active (light exercise/sports 1-3 days/week)</option>
+                                <option value="moderately_active">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                                <option value="very_active">Very active (hard exercise/sports 6-7 days a week)</option>
+                                <option value="super_active">Super active (very hard exercise/sports & a physical job)</option>
+                            </select>
+                            <button class="btn-custom">Calculate</button>
+                        </div>
+                    
+                    </div>
+                </div>
+             </section>
           <!-- meet our team section start -->
            <section class="meet-team">
             <div class="team-heading">
@@ -235,6 +316,8 @@
             </div>
 
            </section>
+           <!-- BMR-calculator-heading -->
+            
     </main>
     <footer>
         <div class="fitness">
