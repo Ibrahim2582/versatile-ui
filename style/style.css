@@ -377,6 +377,14 @@ body{
 .team-image{
     height: 100%;
     position: relative;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.team-image::after{
+    background-color: black;
+    content: '';
+    opacity: 0.2;
+    position: absolute;
+    inset: 0;
 }
 .team-image img{
     width: 100%;
@@ -505,7 +513,7 @@ justify-content: center;
         width: 11.25rem;
         height: 4.375rem;
         bottom: 15.625rem;
-        left: -4rem;
+        left: -2rem;
     }
 
     .card-2{
